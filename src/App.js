@@ -5,6 +5,9 @@ import Home from "./pages/Home";
 import Story from "./pages/Story";
 import NewStory from "./pages/NewStory";
 
+//Componentes
+
+
 // React Router
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
