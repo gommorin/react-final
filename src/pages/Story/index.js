@@ -9,7 +9,7 @@ class Story extends Component {
   render() {
     return (
       <div>
-        <h1>Componente Story</h1>
+        <h1>Componente Story #lucho</h1>
       </div>
     )
   }
