@@ -1,5 +1,5 @@
 import "./App.css";
-
+import Author from '../src/Components/Author'
 // Páginas
 import Home from "./pages/Home";
 import Story from "./pages/Story";
@@ -17,6 +17,7 @@ function App() {
           <Route path="/new-story" component={NewStory} />
           <Route path="/story" component={Story} />
         </Switch>
+        <Author/>
       </div>
     </Router>
   );
