@@ -15,20 +15,19 @@ class Author extends Component{
     constructor(props){
         super(props)
         this.state = {
-            avatar:"",
-            name:"Lucho",
-            lastName:"Cachetadas",
-            date:"18/11/20",
-            timeToRead:"8 min",
-            popular:false,
-
+            post: {}
+            // avatar:"",
+            // name:"Lucho",
+            // lastName:"Gomez",
+            // date:"18/11/20",
+            // timeToRead:"8 min",
+            // popular:false,
         }
     }
     render(){
         return (
             <div>
-                <img src="https://source.unsplash.com/random/200x200" alt=""></img>
-                <p>{this.state.name} {this.state.lastName}</p>
+                <img src="https://source.unsplash.com/random/200x200" alt=""/>                <p>{this.state.name} {this.state.lastName}</p>
                 <h1><Button outline color="success">Follow</Button>{' '}</h1> 
                 <p>{this.state.date} &#183; {this.state.timeToRead} &#9733;</p>
             </div>
