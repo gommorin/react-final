@@ -1,5 +1,10 @@
 import React,{Component} from 'react'
+
+// REACTSTRAP
 import { Button } from 'reactstrap';
+
+// CSS
+import from './Author.css'
 
 // const FollowButton = (props) => {
 //     return (
@@ -15,19 +20,13 @@ class Author extends Component{
     constructor(props){
         super(props)
         this.state = {
-            avatar:"",
-            name:"Lucho",
-            lastName:"Cachetadas",
-            date:"18/11/20",
-            timeToRead:"8 min",
-            popular:false,
-
+            post: {}
         }
     }
     render(){
         return (
-            <div>
-                <img src="https://source.unsplash.com/random/200x200" alt=""></img>
+            <div className="author">
+                <img src="https://source.unsplash.com/random/200x200" alt="" />
                 <p>{this.state.name} {this.state.lastName}</p>
                 <h1><Button outline color="success">Follow</Button>{' '}</h1> 
                 <p>{this.state.date} &#183; {this.state.timeToRead} &#9733;</p>
