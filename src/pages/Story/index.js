@@ -9,7 +9,7 @@ class Story extends Component {
   render() {
     return (
       <div>
-        <h1>Componente Story #lucho y #mauro</h1>
+        <h1>Your master plan to Learn Golang Fast and Deep</h1>
       </div>
     )
   }
