@@ -38,7 +38,7 @@ class NewStory extends Component {
       timeToRead: time,
       imageUrl: image
     }
-    console.log(newEntry)
+    console.log(newEntry);
 
     fetch("http://localhost:8080/entries/",{
       method:"POST",
