@@ -20,12 +20,12 @@ class PostItem extends Component {
     <div>
       <Card className="border-0">
         <Row>
-          <CardImg top width="100%" src="https://picsum.photos/seed/picsum/200/300" alt="Card image cap" />
+          <CardImg top width="100%" src="https://picsum.photos/seed/picsum/200/300" alt="Card image cap" height="280px"/>
           <CardBody>
             <CardTitle tag="h2">Card title</CardTitle>
             <Media>
               <Media left href="#">
-                <Media object data-src="https://picsum.photos/200" alt="32" />
+                <Media object data-src="https://picsum.photos/200" height="32px"  />
               </Media>
               <Media body>
                 <Media heading className="d-inline">

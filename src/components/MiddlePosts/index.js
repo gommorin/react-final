@@ -1,5 +1,5 @@
 import { Component } from "react";
-import { Media,Row } from 'reactstrap';
+import { Row } from 'reactstrap';
 import StarIcon from "../../Icons/StarIcon"
 import "./MiddlePosts.css"
 
