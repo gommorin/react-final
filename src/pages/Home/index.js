@@ -1,6 +1,8 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
+import MiddlePosts from "../../components/MiddlePosts";
 import PostItem from "../../components/PostItem";
+import Follow from "../../components/PostItem/Follow";
 
 
 function Home() {
@@ -12,8 +14,15 @@ function Home() {
           <Col>
             <PostItem />
           </Col>
-          <Col></Col>
-          <Col></Col>
+          <Col>
+            <MiddlePosts />
+            <MiddlePosts />
+            <MiddlePosts />
+            <MiddlePosts />
+          </Col>
+          <Col>
+            <Follow />
+          </Col>
         </Row>
       </Container>
     </div>
