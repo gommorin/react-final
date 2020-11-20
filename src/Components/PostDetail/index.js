@@ -1,61 +1,27 @@
 import React,{Component} from 'react'
 import Author from '../Author'
 
+import { Container, Row, Col } from 'reactstrap';
 // CSS
 import './PostDetail.css'
 
 class PostDetail extends Component{
-    constructor(props){
-        super(props)
-        this.state = {
-            title:"",
-            // subtitle:"", David
-            author:"",
-            summary:"",
-            img:"",
-            content:""
-        }
-    }
+    
 
     render(){
         return (
             <Container className="themed-container" fluid="md">
                 <Row>
                     <Col className="title-subtitle">
-                        <h1>Title</h1>
-                        <h4>Subtitle</h4>
+                        <h1>{this.props.title}</h1>
+                        <h4>{this.props.subtitle}</h4>
                     </Col>
                 </Row>
-                <Author />
+                <Author name={this.props.author} date={this.props.date} timeToRead={this.props.timeToRead} authorImage={this.props.authorImage}/>
                 <Row className="content">
                     <Col className="col">
-                        <img className="w-100 mb-5" src="https://source.unsplash.com/random/800x500"/>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                Consectetur aliquid voluptas accusamus, explicabo odit minima
-                                nostrum ex quia quod sapiente. Iste placeat veritatis nesciunt
-                                repellat laboriosam ducimus ipsam vitae officia. Ipsa alias
-                                doloremque perferendis autem doloribus quisquam nesciunt!
-                                Exercitationem, blanditiis hic?
-                            </p>
-                            <p>
-                                Vero libero corrupti quam quide facere, sunt incidunt provident et
-                                doloribus magnam qui enim molestias praesentium tempore maxime, a
-                                quibusdam nihil aspernatur exercitationem esse? Reiciendis, quam!
-                                Officiis perferendis commodi aut. Facere quod atque alias
-                                exercitationem ducimus in voluptatum at, qui deleniti id et aliquid
-                                nam, dolorum quidem autem modi incidunt porro delectus? Minus, quam
-                                provident.
-                            </p>
-                            <p>
-                                Atque fugit earum dolorum recusandae aliquid assumenda, perferendis
-                                nobis reiciendis impedit, eius accusantium eaque modi sint ab, ut
-                                dolor amet incidunt blanditiis placeat quas tempore illo nihil!
-                                Nobis, veritatis ipsa obcaecati aut suscipit consequatur maiores
-                                nesciunt deleniti at officia, quo recusandae corrupti culpa
-                                architecto ducimus cum accusamus. Illo nesciunt exercitationem
-                                repellat inventore dicta sint?
-                            </p>
+                        <img className="w-100 mb-5" src={this.props.imageUrl}/>
+                            <p>{this.props.content}</p>
                         </Col>
                     </Row>
 

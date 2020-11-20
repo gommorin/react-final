@@ -26,10 +26,15 @@ class Story extends Component {
     const hasPost = Boolean(Object.entries(this.state.post).length)
     return (
       <div>
-        <h1>{hasPost ? this.state.post.title : " No hay title"}</h1> 
+        <PostDetail title={this.state.post.title} subtitle ={this.state.post.subtitle} 
+        author={this.state.post.author}
+        imageUrl = {this.state.post.imageUrl} content ={this.state.post.content}
+         authorImage= {this.state.post.authorImage} date={this.state.post.date} 
+        timeToRead={this.state.post.timeToRead}/> 
       </div>
     )
   }
 }
+
 
 export default Story
