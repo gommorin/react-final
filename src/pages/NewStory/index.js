@@ -47,6 +47,10 @@ class NewStory extends Component {
       },
       body: JSON.stringify(newEntry)
     });
+
+    this.props.history.push("/");
+
+
   }
 
   render() {
@@ -63,6 +67,7 @@ class NewStory extends Component {
                     <Input type="text" value={title} name="title" onChange={this.handleNewPostChange} placeholder="Title" className= "text-muted border border-right-0 border-top-0 border-bottom-0 border-secondary rounded-0 "/>
                   </FormGroup>
                 </Col>
+<<<<<<< HEAD
                 <Col xs="12" md={{ size: 8, offset: 2 }} className= "p-0">
                   <FormGroup>
                     <Input type="text" value={author} name="author" onChange={this.handleNewPostChange} placeholder="What's your name?" className= "text-muted border border-right-0 border-top-0 border-bottom-0 border-secondary rounded-0 "/>  
@@ -90,6 +95,21 @@ class NewStory extends Component {
               <Col xs="12" md={{ size: 8, offset: 2 }} className= "p-0">
                 <Button type="submit" className= "w-100 bg-light text-secondary border-light ">Publish</Button>
               </Col>
+=======
+              <FormGroup>
+                <Input type="text" value={author} name="author" onChange={this.handleNewPostChange} placeholder="What's your name?" className= "text-muted"/>  
+              </FormGroup>
+              <FormGroup> 
+                <Input type="text" value={content} name="content" onChange={this.handleNewPostChange} placeholder="Tell your story..." className= "text-muted"/>  
+              </FormGroup>
+              <FormGroup> 
+              <Input type="date" value={date} name="date" onChange={this.handleNewPostChange}  className= "text-muted"/> 
+              </FormGroup>
+              <FormGroup> 
+              <Input type="text" value={image} name="image" onChange={this.handleNewPostChange} placeholder="Write the image URL" className= "text-muted"/> 
+              </FormGroup>
+              <Button type="submit">Publish</Button>
+>>>>>>> c5bdd9cb975484c3600fadb41533dcb6ef91aa4e
               </Form>
             </Col>
           </Row>
