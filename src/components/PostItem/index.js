@@ -20,7 +20,7 @@ class PostItem extends Component {
     <div>
       <Card className="border-0">
         <Row>
-          <CardImg top width="100%" src="https://picsum.photos/seed/picsum/200/300" alt="Card image cap" height="280px"/>
+          <CardImg top width="100%" src="https://picsum.photos/seed/picsum/200/300" alt="Card image cap" width="376px" />
           <CardBody>
             <CardTitle tag="h2">Card title</CardTitle>
             <Media>

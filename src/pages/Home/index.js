@@ -26,11 +26,13 @@ function Home() {
           </Col>
         </Row>
       </Container>
+      <hr />
       <Container>
         <Row>
           <PostItem></PostItem>
         </Row>
       </Container>
+      <hr />
       <Container>
         <Row>
           <Col>
