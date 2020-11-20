@@ -64,7 +64,6 @@ class NewStory extends Component {
     return (
       <div>
         <Container>
-          <h2 className="text-muted">Draft</h2>
           <Row>
             <Col>
               <Form onSubmit={this.handleSubmit}>

@@ -4,6 +4,7 @@ import "./App.css";
 import Home from "./pages/Home";
 import Story from "./pages/Story";
 import NewStory from "./pages/NewStory";
+import NavBar from "./components/NavBar";
 
 //Componentes
 
@@ -15,6 +16,7 @@ function App() {
   return (
     <Router>
       <div>
+        <NavBar />
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/new-story" component={NewStory} />
