@@ -1,3 +1,28 @@
 .Midpost{
     display: flex;
+    flex-direction: column;
+    margin:auto;
+}
+.Midpost img{
+    width: 100px;
+    height: 100px;
+    
+}
+
+.Midlepost{
+    display: flex;
+    flex-grow: inherit;
+    margin:auto;
+}
+.Midpost span{
+    justify-content: end;
+    align-items: flex-end;
+    text-align: end;
+    padding-bottom: 40px;
+}
+h3{
+    font-size: 10px;
+}
+.sizeletter{
+    font-size: 10px;
 }

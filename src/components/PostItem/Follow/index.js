@@ -1,5 +1,6 @@
 import { Component } from "react";
 import { Button, Row  } from 'reactstrap';
+import "./Follow.css"
 
 class Follow extends Component {
   constructor(props){
@@ -12,30 +13,36 @@ class Follow extends Component {
       return (
     <div>    
         <Row>
-            <h2>CREATORS TO FOLLOW</h2>
-            <div>
-            <h2>Wil Wheaton</h2>
-            <Button outline color="success">Follow</Button>{' '}
+            <div className="Followc">
+              <h5>CREATORS TO FOLLOW</h5>
+              <div className="FollowContainer">
+                <img className="imageF" src="#"></img>
+                <h5> Wil Wheaton</h5>
+                <Button className="buton" outline color="success">Follow</Button>{' '}
+              </div>
             </div>
-            <div>
-            <h2>Anil Dash</h2>
-            <Button outline color="success">Follow</Button>{' '}
+            <div className="FollowContainer">
+              <img className="imageF" src="#"></img>
+              <h5>Anil Dash</h5>
+              <Button className="buton" outline color="success">Follow</Button>{' '}
             </div>
-            <h2>TOPICS TO FOLLOW</h2>
-            <div>
-            <h2>Coronavirus</h2>
-            <Button outline color="success">Follow</Button>{' '}
+           <div >
+              <h5>TOPICS TO FOLLOW</h5>
+              <div className="FollowContainer">
+              <h5>Coronavirus</h5>
+              <Button outline color="success">Follow</Button>{' '}
+              </div>
+              <div className="FollowContainer">
+                <h5>Software Engineering</h5>
+                <Button outline color="success">Follow</Button>{' '}
+              </div>
+              <div className="FollowContainer">
+                 <h5>Lifestyle</h5>
+                 <Button outline color="success">Follow</Button>{' '}
+               </div>
             </div>
-            <div>
-            <h2>Software Engineering</h2>
-            <Button outline color="success">Follow</Button>{' '}
-            </div>
-            <div>
-            <h2>Lifestyle</h2>
-            <Button outline color="success">Follow</Button>{' '}
-            </div>
-            <a> See more </a>
-        </Row>   
+        </Row> 
+        <a> See more </a>  
     </div>
       )
   }
