@@ -5,23 +5,13 @@ import React,{Component} from './node_modules/react'
 import { Button } from './node_modules/reactstrap';
 =======
 import { Button } from 'reactstrap';
-import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
+// import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 import { Container, Row, Col } from 'reactstrap';
 >>>>>>> ef3b880ef75e78cad00b7f38f157c93d3df3c40b
 
 // CSS
 import './Author.css'
 
-// const FollowButton = (props) => {
-//     return (
-//       <div>
-//         <Button outline color="success">success</Button>{' '}
-//       </div>
-//     );
-//   } Comentar a David
-
-// Comentar a David si deben de ir dentro de un tag
-// FollowButton
 class Author extends Component{
     constructor(props){
         super(props)
@@ -36,25 +26,25 @@ class Author extends Component{
         }
     }
 
-    toggle = () => {
-        const { dropdownOpen } = this.state
-        this.setState({dropdownOpen: !dropdownOpen})
-    }
+    // toggle = () => {
+    //     const { dropdownOpen } = this.state
+    //     this.setState({dropdownOpen: !dropdownOpen})
+    // }
 
     render(){
-        const { dropdownOpen } = this.state
+        // const { dropdownOpen } = this.state
         return (
-            <Container className="themed-container" fluid="lg">
+            <Container className="themed-container" fluid="md">
                 <Row>
                     <Col className="title-subtitle">
                         <h1>Title</h1>
                         <h4>Subtitle</h4>
                     </Col>
-                <Row>
+                </Row>
 
                 <Container className="author">
                     <Row>
-                        <Col className="col-6 col-md-6 col-lg-6 author-details">
+                        <Col xs="6" className="author-details">
                             <img
                             className="avatar"
                             src="https://source.unsplash.com/random/100x100"
@@ -70,15 +60,15 @@ class Author extends Component{
                             <h6>Date + Time</h6>
                             </div>
                         </Col>
-                        <Col className="col-6 col-md-6 col-lg-6 social-media">
-                            <a href=""
+                        <Col xs="6" className="social-media">
+                            <a href="https://"
                             ><svg className="icon">
                                 <path
                                 fill="#757575"
                                 d="M22.05 7.54a4.47 4.47 0 0 0-3.3-1.46 4.53 4.53 0 0 0-4.53 4.53c0 .35.04.7.08 1.05A12.9 12.9 0 0 1 5 6.89a5.1 5.1 0 0 0-.65 2.26c.03 1.6.83 2.99 2.02 3.79a4.3 4.3 0 0 1-2.02-.57v.08a4.55 4.55 0 0 0 3.63 4.44c-.4.08-.8.13-1.21.16l-.81-.08a4.54 4.54 0 0 0 4.2 3.15 9.56 9.56 0 0 1-5.66 1.94l-1.05-.08c2 1.27 4.38 2.02 6.94 2.02 8.3 0 12.86-6.9 12.84-12.85.02-.24 0-.43 0-.65a8.68 8.68 0 0 0 2.26-2.34c-.82.38-1.7.62-2.6.72a4.37 4.37 0 0 0 1.95-2.51c-.84.53-1.81.9-2.83 1.13z"
                                 ></path></svg
                             ></a>
-                            <a href=""
+                            <a href="https://"
                             ><svg className="icon">
                                 <path
                                 fill="#757575"
@@ -91,14 +81,14 @@ class Author extends Component{
                                 fill="#fff"
                                 ></path></svg
                             ></a>
-                            <a href=""
+                            <a href="https://"
                             ><svg className="icon">
                                 <path
                                 fill="#757575"
                                 d="M23.2 5H5.8a.8.8 0 0 0-.8.8V23.2c0 .44.35.8.8.8h9.3v-7.13h-2.38V13.9h2.38v-2.38c0-2.45 1.55-3.66 3.74-3.66 1.05 0 1.95.08 2.2.11v2.57h-1.5c-1.2 0-1.48.57-1.48 1.4v1.96h2.97l-.6 2.97h-2.37l.05 7.12h5.1a.8.8 0 0 0 .79-.8V5.8a.8.8 0 0 0-.8-.79"
                                 ></path></svg
                             ></a>
-                            <a href=""
+                            <a href="https://"
                             ><svg className="icon">
                                 <path
                                 fill="#757575"
@@ -107,7 +97,7 @@ class Author extends Component{
                                 ></path></svg
                             ></a>
                             <div className="dropdown">
-                            <a href=""
+                            <a href="https://"
                                 ><svg className="icon">
                                 <path
                                     fill="#757575"
@@ -160,9 +150,9 @@ class Author extends Component{
 
                 <Container>
                     <Row>
-                        <Col className="col-6 col-md-6 col-lg-6 popularity">
+                        <Col xs="6" className="popularity">
                             <div className="claps">
-                                <a href="">
+                                <a href="https://">
                                     <svg className="icon" aria-label="clap">
                                         <path
                                             fill="#000000"
@@ -173,7 +163,7 @@ class Author extends Component{
                                 <p>66</p>
                             </div>
                             <div className="comments">
-                                <a href="">
+                                <a href="https://">
                                     <svg className="icon" aria-label="responses">
                                         <path
                                             fill="#000000"
@@ -185,8 +175,8 @@ class Author extends Component{
                                 <p>20</p>
                             </div>
                         </Col>
-                        <Col className="col-6 col-md-6 col-lg-6 social-media">
-                            <a href="">
+                        <Col xs="6" className="social-media">
+                            <a href="https://">
                                 <svg className="icon">
                                     <path
                                     fill="#757575"
@@ -194,7 +184,7 @@ class Author extends Component{
                                     ></path>
                                 </svg>
                             </a>
-                            <a href="">
+                            <a href="https://">
                                 <svg className="icon">
                                     <path
                                     fill="#757575"
@@ -207,7 +197,7 @@ class Author extends Component{
                                     fill="#fff"></path>
                                 </svg>
                             </a>
-                            <a href="">
+                            <a href="https://">
                                 <svg className="icon">
                                     <path
                                     fill="#757575"
@@ -215,7 +205,7 @@ class Author extends Component{
                                     ></path>
                                 </svg>
                             </a>
-                            <a href="">
+                            <a href="https://">
                                 <svg className="icon">
                                     <path
                                     fill="#757575"
@@ -225,7 +215,7 @@ class Author extends Component{
                                 </svg>
                             </a>
                             <div className="dropdown">
-                                <a href="">
+                                <a href="https://">
                                     <svg className="icon">
                                         <path
                                             fill="#757575"
