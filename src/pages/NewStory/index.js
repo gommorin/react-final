@@ -47,6 +47,10 @@ class NewStory extends Component {
       },
       body: JSON.stringify(newEntry)
     });
+
+    this.props.history.push("/");
+
+
   }
 
   render() {
@@ -64,10 +68,10 @@ class NewStory extends Component {
                   </FormGroup>
                 </Col>
               <FormGroup>
-                <Input type="text" value={author} name="user" onChange={this.handleNewPostChange} placeholder="What's your name?" className= "text-muted"/>  
+                <Input type="text" value={author} name="author" onChange={this.handleNewPostChange} placeholder="What's your name?" className= "text-muted"/>  
               </FormGroup>
               <FormGroup> 
-                <Input type="text" value={content} name="story" onChange={this.handleNewPostChange} placeholder="Tell your story..." className= "text-muted"/>  
+                <Input type="text" value={content} name="content" onChange={this.handleNewPostChange} placeholder="Tell your story..." className= "text-muted"/>  
               </FormGroup>
               <FormGroup> 
               <Input type="date" value={date} name="date" onChange={this.handleNewPostChange}  className= "text-muted"/> 
