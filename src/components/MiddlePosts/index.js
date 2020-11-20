@@ -19,10 +19,10 @@ class MiddlePosts extends Component {
     <div>
       <Row>
           <div className="Midpost">
-              <h2> $Author name</h2>
-              <h2> $Title</h2>
-              <span>{this.state.isFeatured ? '$Read More ·' : '' } $Month $Day · $Minute min read {this.state.isStarred ? <StarIcon width="15" /> :'' }</span>
+              <h3> $Author name</h3>
+              <h3> $Title</h3>
               <img src = "#"/>
+              <span>{this.state.isFeatured ? '$Read More ·' : '' } $Month $Day · $Minute min read {this.state.isStarred ? <StarIcon width="15" /> :'' }</span>
           </div>
       </Row>
     </div>

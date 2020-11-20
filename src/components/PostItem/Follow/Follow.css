@@ -1,0 +1,17 @@
+.imageF{
+    height: 64px;
+    width: 64px;
+    border-radius: 25px;
+    background-color: aqua;
+}
+h2{
+    font-size: 10px;
+}
+.FollowContainer{
+    display: flex;
+    flex-grow: inherit;
+}
+.Followc{
+    display: flex;
+    flex-wrap: wrap;
+}
