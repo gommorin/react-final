@@ -8,7 +8,6 @@ import NavBar from "./components/NavBar";
 
 //Componentes
 
-
 // React Router
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -20,7 +19,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/new-story" component={NewStory} />
-          <Route path="/story" component={Story} />
+          <Route path="/story/:id" component={Story} />
         </Switch>
       </div>
     </Router>

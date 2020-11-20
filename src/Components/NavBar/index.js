@@ -36,7 +36,9 @@ function NavBar() {
               </svg>
             </span>
           </Button>
-          <Button className="bg-success border-0">New Post</Button>
+          <Button href={"/new-story"} className="bg-success border-0">
+            New Post
+          </Button>
         </Col>
       </Row>
     </Container>

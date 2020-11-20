@@ -15,7 +15,7 @@ class MiddlePosts extends Component {
 
   render() {
     return (
-      <div>
+      <div onClick={() => this.props.push(`/story/${this.props.id}`)}>
         <Row>
           <div className="Midpost">
             <div className="Midlepost">

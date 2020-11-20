@@ -9,9 +9,9 @@ import PostItem from "../../components/PostItem";
 import TrendingPost from "../../components/TrendingPost";
 import FeaturedPost from "../../components/FeaturedPost";
 import Follow from "../../components/PostItem/Follow";
-import Footer from "../../components/Footer/";
+import Footer from "../../components/Footer";
 
-function Home() {
+function Home(props) {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
@@ -23,7 +23,7 @@ function Home() {
   }, []);
 
   const middlePosts = posts.slice(0, 4);
-  console.log(middlePosts);
+  console.log(props);
   return (
     <div>
       <Container>
@@ -34,9 +34,12 @@ function Home() {
           <Col>
             {middlePosts.map((post) => (
               <MiddlePosts
+                key={post._id}
+                id={post._id}
                 authorName={post.author}
                 title={post.title}
                 image={post.imageUrl}
+                push={props.history.push}
               />
             ))}
           </Col>
