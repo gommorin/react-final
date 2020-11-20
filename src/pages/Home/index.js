@@ -1,27 +1,44 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+
+// Reactstrap
 import { Container, Row, Col } from "reactstrap";
+
+// Components
 import MiddlePosts from "../../components/MiddlePosts";
 import PostItem from "../../components/PostItem";
 import TrendingPost from "../../components/TrendingPost";
 import FeaturedPost from "../../components/FeaturedPost";
 import Follow from "../../components/PostItem/Follow";
-import Footer from "../../components/Footer/"
-
+import Footer from "../../components/Footer/";
 
 function Home() {
+  const [posts, setPosts] = useState([]);
+
+  useEffect(() => {
+    fetch("http://localhost:8080/entries/")
+      .then((response) => response.json())
+      .then((data) => {
+        setPosts(data.data.entries);
+      });
+  }, []);
+
+  const middlePosts = posts.slice(0, 4);
+  console.log(middlePosts);
   return (
     <div>
-      <h1>Componente Home desde f/hhh</h1>
       <Container>
         <Row>
           <Col>
             <FeaturedPost />
           </Col>
           <Col>
-            <MiddlePosts />
-            <MiddlePosts />
-            <MiddlePosts />
-            <MiddlePosts />
+            {middlePosts.map((post) => (
+              <MiddlePosts
+                authorName={post.author}
+                title={post.title}
+                image={post.imageUrl}
+              />
+            ))}
           </Col>
           <Col>
             <Follow />
