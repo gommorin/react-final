@@ -28,15 +28,15 @@ class Follow extends Component {
             </div>
            <div >
               <h5>TOPICS TO FOLLOW</h5>
-              <div>
+              <div className="FollowContainer">
               <h5>Coronavirus</h5>
               <Button outline color="success">Follow</Button>{' '}
               </div>
-              <div>
+              <div className="FollowContainer">
                 <h5>Software Engineering</h5>
                 <Button outline color="success">Follow</Button>{' '}
               </div>
-              <div>
+              <div className="FollowContainer">
                  <h5>Lifestyle</h5>
                  <Button outline color="success">Follow</Button>{' '}
                </div>
