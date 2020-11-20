@@ -17,7 +17,6 @@ function App() {
           <Route path="/new-story" component={NewStory} />
           <Route path="/story" component={Story} />
         </Switch>
-        {/* <Author/> */}
       </div>
     </Router>
   );
