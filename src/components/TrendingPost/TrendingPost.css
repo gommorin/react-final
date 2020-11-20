@@ -1,0 +1,24 @@
+svg {
+  fill: #757575;
+}
+
+.trending--index {
+  font-weight: bold;
+  font-size: 30px;
+  color: rgba(230, 230, 230.5)
+}
+
+.author--name {
+  font-size: 13px;
+  color: black;
+}
+
+.trending--title {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.meta--data {
+  font-size: 13px;
+  color: 757575;
+}

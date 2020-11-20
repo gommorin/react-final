@@ -1,9 +1,9 @@
 import { Component } from "react";
 import { Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle, Media,Row } from 'reactstrap';
 import StarIcon from "../../Icons/StarIcon"
-import "./PostItem.css"
+import "./FeaturedPost.css"
 
-class PostItem extends Component {
+class FeaturedPost extends Component {
   constructor(props){
       super(props)
       this.state = {
@@ -20,25 +20,27 @@ class PostItem extends Component {
     <div>
       <Card className="border-0">
         <Row>
-          <img width="100%" src="https://picsum.photos/seed/picsum/200/300" alt="$TITULO" />
+          <img height="280px" width="100%" src="https://picsum.photos/seed/picsum/200/300" alt="$TITULO" />
           <CardBody>
             <CardTitle tag="h2">Card title</CardTitle>
             <Media>
               <Media left href="#">
                 <Media object data-src="https://picsum.photos/200" height="32px"  />
               </Media>
-              <Media body>
-                <Media heading className="d-inline">
-                  $Author Name
+              <Media>
+                <Media left href="#">
+                  <Media object data-src="https://picsum.photos/200" alt="p" />
                 </Media>
-                In $Place
-              </Media>
+                <Media body>
+                  <Media heading>
+                    <span className="author--name">$author</span>
+                  </Media>
+                </Media>
+            </Media>
             </Media>
             <CardSubtitle tag="h6" className="mb-2 text-muted">Card subtitle</CardSubtitle>
             <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-            <p>
-              <span>{this.state.isFeatured ? '$Read More link ·' : '' } $Month $Day · $Minute min read {this.state.isStarred ? <StarIcon width="15" /> :'' }</span>
-            </p>
+            <span className="meta--data">$Month $Day · $Minute min read {this.state.isStarred ? <StarIcon width="15" /> :'' }</span>
           </CardBody>
         </Row>
       </Card>
@@ -47,4 +49,4 @@ class PostItem extends Component {
   }
 }
 
-export default PostItem
+export default FeaturedPost
