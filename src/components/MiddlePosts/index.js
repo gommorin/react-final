@@ -25,7 +25,7 @@ class MiddlePosts extends Component {
                 <h5> $Title</h5>
                 </div>
                 <div>
-                <img src = "#"/>
+                <img src = "https://picsum.photos/200"/>
                 </div>
               </div>
               
