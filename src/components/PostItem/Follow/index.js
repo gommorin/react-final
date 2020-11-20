@@ -14,17 +14,17 @@ class Follow extends Component {
     <div>    
         <Row>
             <div className="Followc">
-              <h2>CREATORS TO FOLLOW</h2>
+              <h5>CREATORS TO FOLLOW</h5>
               <div className="FollowContainer">
                 <img className="imageF" src="#"></img>
-                <h2> Wil Wheaton</h2>
-                <Button outline color="success">Follow</Button>{' '}
+                <h5> Wil Wheaton</h5>
+                <Button className="buton" outline color="success">Follow</Button>{' '}
               </div>
             </div>
             <div className="FollowContainer">
               <img className="imageF" src="#"></img>
-              <h2>Anil Dash</h2>
-              <Button outline color="success">Follow</Button>{' '}
+              <h5>Anil Dash</h5>
+              <Button className="buton" outline color="success">Follow</Button>{' '}
             </div>
            <div >
               <h5>TOPICS TO FOLLOW</h5>
