@@ -1,5 +1,5 @@
-import React,{Component} from 'react'
-import { Button } from 'reactstrap';
+import React,{Component} from './node_modules/react'
+import { Button } from './node_modules/reactstrap';
 
 // const FollowButton = (props) => {
 //     return (

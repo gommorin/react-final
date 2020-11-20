@@ -1,5 +1,10 @@
-import React,{Component} from 'react'
-import { Button } from 'reactstrap';
+import React,{Component} from './node_modules/react'
+
+// REACTSTRAP
+import { Button } from './node_modules/reactstrap';
+
+// CSS
+import './Author.css'
 
 // const FollowButton = (props) => {
 //     return (
@@ -24,14 +29,28 @@ class Author extends Component{
             // popular:false,
         }
     }
+
+
     render(){
         return (
-            <div>
-                <img src="https://source.unsplash.com/random/200x200" alt=""/>                <p>{this.state.name} {this.state.lastName}</p>
-                <h1><Button outline color="success">Follow</Button>{' '}</h1> 
-                <p>{this.state.date} &#183; {this.state.timeToRead} &#9733;</p>
-            </div>
+            <h1>Lucho was here</h1>
         )
+        // return (
+        //     <div>
+        //         <img src="https://source.unsplash.com/random/200x200" alt=""/>       
+        //         <h1><Button outline color="success">Follow</Button>{' '}</h1> 
+        //         <p>{this.state.date} &#183; {this.state.timeToRead} &#9733;</p>
+        //     <div className="container">
+        //         <img className="avatar" src="https://source.unsplash.com/random/200x200" alt="" />
+        //         <div className="author">
+        //             <div className="follow">
+        //                 <p>{this.state.name} {this.state.lastName}</p>
+        //                 <h1><Button outline color="success">Follow</Button>{' '}</h1> 
+        //             </div>
+        //             <p>{this.state.date} &#183; {this.state.timeToRead} &#9733;</p>
+        //         </div>
+        //     </div>
+        // )
     }
 }
 
