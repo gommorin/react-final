@@ -1,5 +1,5 @@
 import "./App.css";
-
+// import Author from '../src/components/Author'
 // Páginas
 import Home from "./pages/Home";
 import Story from "./pages/Story";

@@ -1,0 +1,147 @@
+h1,h2,h3 {
+  font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+
+h4,h5,h6 {
+  font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #757575;
+  font-weight: 500;
+}
+
+p {
+  font-family: charter, Georgia, Cambria, "Times New Roman", Times, serif;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.title-subtitle {
+  margin: 20px 0 40px 0;
+}
+
+.container .author {
+  margin: 40px 0 20px 0;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 80px;
+  margin: 0;
+}
+
+.author-details {
+  height: 80%;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 5px;
+}
+
+.avatar {
+  padding: 0;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.info {
+  height: 100%;
+}
+
+.info p {
+  font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  color: gray;
+  font-size: 14px;
+  margin: 0;
+}
+
+.name-follow {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.name-follow h6 {
+  font-size: 14px;
+  margin: 0;
+  color: #000000;
+}
+
+.name-follow .btn {  
+  border-radius: 5px !important;
+  border-color: #757575;
+  color: #757575;
+  font-size: 16px !important;
+  text-align: center !important;
+  transform: scale(.8);
+  padding: .2em 1em;
+  font-size: 14px;
+  margin-left: .4em;
+}
+
+.name-follow .btn:hover {
+  color: white;
+}
+
+.social-media {
+  display:flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 4px;
+}
+
+.content {
+  margin: 10px 0 20px 0;
+}
+
+.popularity {
+  padding-left: 0;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.popularity p {
+  font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #000000;
+  font-weight: 500;
+  margin: 0;
+  font-size: 14px;
+}
+
+.claps {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-right: .5em;
+}
+
+.claps .icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 0;
+}
+
+.comments {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-right: .5em;
+}
+
+.comments .icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 0;
+}
