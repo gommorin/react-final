@@ -1,13 +1,9 @@
-import React,{Component} from './node_modules/react'
+import React,{Component} from 'react'
 
 // REACTSTRAP
-<<<<<<< HEAD
-import { Button } from './node_modules/reactstrap';
-=======
 import { Button } from 'reactstrap';
 // import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 import { Container, Row, Col } from 'reactstrap';
->>>>>>> ef3b880ef75e78cad00b7f38f157c93d3df3c40b
 
 // CSS
 import './Author.css'
